@@ -1,5 +1,5 @@
-import React, { useContext } from "react"
-import { ContextApp } from "../context/ContextApp"
+import React from "react"
+// import { ContextApp } from "../context/ContextApp"
 
 const HomePage = () => {
   // const context = useContext(ContextApp)
