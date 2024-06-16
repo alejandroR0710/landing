@@ -24,7 +24,7 @@ const RouterApp = () => {
             <Route path="/about" component={AboutPage} />
             <Route path="/services" component={ServicesPage} />
             <Route path="/projects" component={ProjectsPage} />
-            <Route path="/testimonials" component={TestimonialsPage} />
+            {/* <Route path="/testimonials" component={TestimonialsPage} /> */}
             <Route path="/faqs" component={FAQsPage} />
             <Route path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />

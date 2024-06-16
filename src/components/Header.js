@@ -86,7 +86,7 @@ const Header = () => {
               Proyectos
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/testimonials"
               onClick={() => setIsOpen(false)}
@@ -94,7 +94,7 @@ const Header = () => {
             >
               Testimonios
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/faqs"
