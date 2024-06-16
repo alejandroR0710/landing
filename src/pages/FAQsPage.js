@@ -16,11 +16,11 @@ const faqsData = [
     answer:
       "El servicio de acueducto se factura mensualmente. Puede recibir su factura por correo electrónico o en formato físico, según su preferencia.",
   },
-  {
+  /* {
     question: "¿Qué métodos de pago aceptan?",
     answer:
       "Aceptamos diversos métodos de pago, incluyendo transferencias bancarias, tarjetas de crédito y débito, y pagos en efectivo en puntos de atención autorizados.",
-  },
+  }, */
   {
     question: "¿Cómo puedo reportar un problema con mi servicio?",
     answer:

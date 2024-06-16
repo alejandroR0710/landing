@@ -62,7 +62,9 @@ const ServicesPage = () => {
           servicios y cómo podemos ayudarte.
         </p>
         <a
-          href="/contact"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=573207864825&text=Hola,%20necesito%20solicitar%20el%20servicio%20de%20agua%20para%20mi%20hogar.%20¿Puede ayudarme?"
           className="bg-primary text-white py-2 px-4 rounded hover:bg-secondary transition duration-300"
         >
           Contáctanos

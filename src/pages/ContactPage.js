@@ -34,14 +34,14 @@ const ContactPage = () => {
     e.preventDefault()
     emailjs
       .send(
-        "service_sfzi0ih", // Reemplaza con el Service ID al momento de configurar l;a cuenta en EmailJS
-        "template_atg0zhj", // Reemplaza con tu Template ID al momento de configurar la cuenta en EmailJS
+        "service_yyeebtm", // Reemplaza con el Service ID al momento de configurar l;a cuenta en EmailJS
+        "template_70ahz3s", // Reemplaza con tu Template ID al momento de configurar la cuenta en EmailJS
         {
           name: form.name,
           email: form.email,
           message: form.message,
         },
-        "wdyZuWLhARRiqTK8T" // Reemplaza con tu User ID / en este caso de la version se configura el API KEY
+        "Kqb698tgzDW1DrqPt" // Reemplaza con tu User ID / en este caso de la version se configura el API KEY
       )
       .then(
         (result) => {
@@ -88,21 +88,21 @@ const ContactPage = () => {
                 Dirección
               </h3>
               <p className="text-secondary-light">
-                123 Calle Principal, Ciudad, País
+                CORR DE CEILAN CL 4 27 INSTALACIONES GALERIA
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold text-secondary mb-2">
                 Teléfono
               </h3>
-              <p className="text-secondary-light">+1 (123) 456-7890</p>
+              <p className="text-secondary-light">+57 3137111140</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold text-secondary mb-2">
                 Email
               </h3>
               <p className="text-secondary-light">
-                contacto@acueductoservicios.com
+                servipublicosceilan@gmail.com
               </p>
             </div>
           </div>
@@ -199,9 +199,17 @@ const ContactPage = () => {
           <h2 className="text-3xl font-bold mb-4">
             ¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!
           </h2>
-          <button className="bg-accent text-primary font-bold py-2 px-6 rounded">
+          {/* <button className="bg-accent text-primary font-bold py-2 px-6 rounded">
             Envíanos un mensaje
-          </button>
+          </button> */}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=573207864825&text=Hola,%20necesito%20solicitar%20el%20servicio%20de%20agua%20para%20mi%20hogar.%20¿Puede ayudarme?"
+            className="bg-accent text-primary font-bold py-2 px-6 rounded"
+          >
+            Envíanos un mensaje
+          </a>
         </div>
       </section>
     </div>

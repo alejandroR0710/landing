@@ -55,17 +55,17 @@ const FooterPage = () => {
                 to="/projects"
                 className="text-white hover:text-secondary-light transition duration-300"
               >
-                Proyectos
+                Mejoras
               </Link>
             </li>
-            <li className="mb-2">
+            {/* <li className="mb-2">
               <Link
                 to="/testimonials"
                 className="text-white hover:text-secondary-light transition duration-300"
               >
                 Testimonios
               </Link>
-            </li>
+            </li> */}
             <li className="mb-2">
               <Link
                 to="/faqs"
@@ -89,11 +89,11 @@ const FooterPage = () => {
         <div className="mb-6 md:mb-0">
           <h4 className="text-xl font-semibold mb-4">Contáctanos</h4>
           <p className="text-secondary-light mb-2">
-            123 Calle Principal, Ciudad, País
+            CORR DE CEILAN CL 4 27 INSTALACIONES GALERIA
           </p>
-          <p className="text-secondary-light mb-2">+1 (123) 456-7890</p>
+          <p className="text-secondary-light mb-2">+57 3137111140</p>
           <p className="text-secondary-light">
-            contacto@acueductoservicios.com
+            servipublicosceilan@gmail.com
           </p>
         </div>
 
@@ -139,7 +139,7 @@ const FooterPage = () => {
 
       <div className="text-center mt-10 border-t border-secondary-light pt-4">
         <p className="text-secondary-light">
-          © 2024 Servipublicos E.S.P. Todos los derechos reservados.
+          ©2024 Servipublicos E.S.P. Todos los derechos reservados.
         </p>
         <p className="text-secondary-light mt-2">
           Creado por{" "}
@@ -149,7 +149,7 @@ const FooterPage = () => {
             rel="noopener noreferrer"
             className="text-white hover:text-secondary-light transition duration-300"
           >
-            ATSU
+            <strong>ATSU</strong>
           </a>
         </p>
       </div>
