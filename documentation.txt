@@ -1,0 +1,61 @@
+# version use node , v21.5.0 ( npm v10.2.4)
+# estructure of the project
+
+landing-pages/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── assets/
+│ │ ├── images/
+│ │ └── styles/
+│ ├── components/
+│ │ ├── Header.js
+│ │ ├── Footer.js
+│ │ └── ...
+│ ├── context/
+│ │ └── AppContext.tsx
+│ ├── pages/
+│ │ ├── HomePage.js
+│ │ ├── AboutPage.js
+│ │ ├── ContactPage.js
+│ │ └── ...
+│ ├── router/
+│ │ └── AppRouter.js
+│ ├── App.js
+│ ├── index.tsx
+│ └── ...
+├── package.json
+
+# this app use a context and controller whith routes
+
+ContextApp.tsx
+RouterApp.js
+
+# A detailed configuration of some styles is generated through tailwind that are hosted in the file
+
+tailwind.config.js
+
+# The configuration follows the following parameters
+
+Primary Color: We will use the most vibrant and distinctive color to highlight the most important elements.
+Secondary color: We will use complementary colors for important elements that are not the main ones.
+Accent color: We will use a contrasting color to draw attention to specific elements such as call-to-action buttons (CTAs) or interactive elements.
+Neutral colors: We will use colors that balance the more vibrant tones and allow the content to be readable.
+
+# colors
+
+- #003366 como color primario
+- #004488 como color tertiary
+- #336699 y #6699cc como colores secundarios
+- #99ccff como color de acento
+- #ccf2ff como color neutral
+
+#contact component config
+
+-Create and configure an account FORM https://dashboard.emailjs.com/
+- ~ free email sending manager, up to 500 emails daily ~
+
+-config map custom /components/MapComponent.js , create account in https://console.google.com
+- Generate key API ejmp = AIzaSyD80ffWZxhC66oifNzJt29lskQLozRwlgs
+- In the configuration of the map component, a library icon is established https://react-icons.github.io/react-icons/icons/fa/
