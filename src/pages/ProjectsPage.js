@@ -100,23 +100,57 @@ const projectsData = [
     description: "",
     status: "Completado",
   },
+  // videos
+  {
+    image: "Improvements/improvements_01.webp",
+    video: "https://www.youtube.com/embed/s20SVl4hADA?modestbranding=1&showinfo=0&rel=0",
+    title: "Extrategias de mitigacion ante la escases de agua por el fenomeno del niño",
+    description: "",
+    status: "Completado",
+  },
+  {
+    image: "Improvements/improvements_01.webp",
+    video: "https://youtube.com/embed/K6MO0i-NMg0?modestbranding=1&showinfo=0&rel=0",
+    title: "Trabajos Realizados - Mantenimiento de Alcantarillado",
+    description: "",
+    status: "Completado",
+  },
+  {
+    image: "Improvements/improvements_01.webp",
+    video: "https://youtube.com/embed/9OaIdRsamdU?modestbranding=1&showinfo=0&rel=0",
+    title: "Extrategias de mitigacion ante la escases de agua por el fenomeno del niño",
+    description: "",
+    status: "Completado",
+  },
 ];
 
 const ProjectsPage = () => {
   return (
     <div className="container mx-auto py-12 px-6">
       <h1 className="text-5xl font-bold text-center text-primary mb-8">Mejoras</h1>
-      {/* <p className="text-center text-secondary mb-12">
-        Descubre algunos de los proyectos clave en los que hemos trabajado para mejorar el suministro y la gestión del agua.
-      </p> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectsData.map((project, index) => (
           <div key={index} className="bg-neutral-lightest p-6 rounded-lg shadow-lg">
-            <img
-              src={images[project.image]}
-              alt={project.title}
-              className="rounded-t-lg mb-4 w-full h-48 object-cover"
-            />
+            {project.video ? (
+              <div className="video-wrapper mb-4">
+                <iframe
+                  className="w-full h-48"
+                  src={project.video}
+                  title={project.title}
+                  frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  // allow="accelerometer; encrypted-media; gyroscope;"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            ) : (
+              <img
+                src={images[project.image]}
+                alt={project.title}
+                className="rounded-t-lg mb-4 w-full h-48 object-cover"
+              />
+            )}
             <h2 className="text-2xl font-semibold text-primary mb-2">{project.title}</h2>
             <p className="text-secondary-light mb-4">{project.description}</p>
             <span
@@ -127,7 +161,6 @@ const ProjectsPage = () => {
           </div>
         ))}
       </div>
-      {/* Llamada a la Acción */}
       <div className="mt-12 bg-secondary-light text-center p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-primary mb-4">¿Interesado en nuestros proyectos?</h2>
         <p className="text-primary mb-6">
