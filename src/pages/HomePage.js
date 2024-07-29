@@ -1,5 +1,27 @@
-import React, { useContext } from "react"
-import { ContextApp } from "../context/ContextApp"
+import React from "react"
+// import { ContextApp } from "../context/ContextApp"
+import images from "../utils/imageLoader";
+
+const recentProjects = [
+  {
+    imgSrc: "Improvements/improvements_06.webp",
+    altText: "Nueva bocatoma",
+    title: "Nueva bocatoma",
+    description: "Ante el fenómeno del Niño, estamos construyendo una nueva bocatoma para recolectar agua en nuestro municipio, asegurando un suministro estable y seguro para todos.",
+  },
+  {
+    imgSrc: "Improvements/improvements_09.webp",
+    altText: "Señalizacion de reductores de velocidad",
+    title: "Señalizacion de reductores de velocidad",
+    description: "Descripción breve del proyecto reciente.",
+  },
+  {
+    imgSrc: "Improvements/improvements_10.webp",
+    altText: "Señalizacion de reductores de velocidad",
+    title: "Señalizacion de reductores de velocidad",
+    description: "Descripción breve del proyecto reciente.",
+  },
+];
 
 const HomePage = () => {
   // const context = useContext(ContextApp)
@@ -14,10 +36,10 @@ const HomePage = () => {
     <div className="font-sans">
       {/* Hero Section */}
       <section className="bg-primary-light text-primary p-20 text-center">
-        <div className="container mx-auto">
-          <h1 className="text-5xl font-bold">Servicios de Acueducto</h1>
+        <div className="container mx-auto bagel-fat-one-regular">
+          <h1 className="text-5xl font-bold bagel-fat-one-regular">SERVIPUBLICOS</h1>
           <p className="text-xl mt-4">
-            Proporcionando agua limpia y segura para todos.
+            E.S.P NIT 821000380-2
           </p>
         </div>
       </section>
@@ -99,7 +121,7 @@ const HomePage = () => {
       </section>
 
       {/* Equipos y Tecnología */}
-      <section className="bg-neutral-lightest p-10">
+      {/* <section className="bg-neutral-lightest p-10">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">
             Equipos y Tecnología
@@ -135,7 +157,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Proyectos Recientes */}
       <section className="bg-white p-10">
@@ -144,51 +166,27 @@ const HomePage = () => {
             Proyectos Recientes
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-neutral-lightest p-6 rounded-lg shadow-lg text-center">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Proyecto 1"
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-xl font-semibold text-secondary mb-2">
-                Proyecto 1
-              </h3>
-              <p className="text-secondary-light">
-                Descripción breve del proyecto reciente.
-              </p>
-            </div>
-            <div className="bg-neutral-lightest p-6 rounded-lg shadow-lg text-center">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Proyecto 2"
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-xl font-semibold text-secondary mb-2">
-                Proyecto 2
-              </h3>
-              <p className="text-secondary-light">
-                Descripción breve del proyecto reciente.
-              </p>
-            </div>
-            <div className="bg-neutral-lightest p-6 rounded-lg shadow-lg text-center">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Proyecto 3"
-                className="mx-auto mb-4"
-              />
-              <h3 className="text-xl font-semibold text-secondary mb-2">
-                Proyecto 3
-              </h3>
-              <p className="text-secondary-light">
-                Descripción breve del proyecto reciente.
-              </p>
-            </div>
+            {recentProjects.map((project, index) => (
+              <div key={index} className="bg-neutral-lightest p-6 rounded-lg shadow-lg text-center">
+                <img
+                  src={images[project.imgSrc]}
+                  alt={project.altText}
+                  className="mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold text-secondary mb-2">
+                  {project.title}
+                </h3>
+                {/* <p className="text-secondary-light">
+                  {project.description}
+                </p> */}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Llamada a la Acción */}
-      <section className="bg-tertiary text-white p-10 text-center">
+      {/* <section className="bg-tertiary text-white p-10 text-center">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             ¿Listo para obtener nuestros servicios?
@@ -197,7 +195,7 @@ const HomePage = () => {
             Contáctanos
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

@@ -83,10 +83,10 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
               className="text-white block py-2 px-4 md:py-0"
             >
-              Proyectos
+              Mejoras
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/testimonials"
               onClick={() => setIsOpen(false)}
@@ -94,7 +94,7 @@ const Header = () => {
             >
               Testimonios
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               to="/faqs"

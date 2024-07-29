@@ -22,11 +22,10 @@ const AboutPage = () => {
                 Nuestra Misión
               </h2>
               <p className="text-secondary-light">
-                Proveer agua potable de la más alta calidad, asegurando el
-                acceso a todos y contribuyendo al bienestar y desarrollo de la
-                comunidad. Nos comprometemos a operar con transparencia,
-                responsabilidad ambiental y social, y a mantener una mejora
-                continua en nuestros procesos.
+                Proporcionar con calidad y eficiencia los servicios de agua potable y saneamiento básico para 
+                contribuir al bienestar, la calidad y el entorno ecológico de los habitantes del corregimiento 
+                de Ceilán del municipio de Bugalagrande, a través del desarrollo integral de nuestro personal 
+                y en apego al marco legal aplicable.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -34,11 +33,10 @@ const AboutPage = () => {
                 Nuestra Visión
               </h2>
               <p className="text-secondary-light">
-                Ser líderes en la gestión y distribución de recursos hídricos,
-                promoviendo prácticas sostenibles y tecnológicas para un futuro
-                mejor. Aspiramos a ser reconocidos como una organización
-                innovadora y comprometida con la excelencia en el servicio y la
-                satisfacción del cliente.
+                Garantizar el suministro de agua potable y saneamiento básico a las próximas 
+                generaciones del corregimiento de Ceilán del municipio de Bugalagrande, 
+                satisfacer las necesidades de nuestros clientes, y que nuestros indicadores 
+                de gestión nos coloquen como organismo operador líder en el país.
               </p>
             </div>
           </div>
@@ -52,13 +50,11 @@ const AboutPage = () => {
             Nuestra Historia
           </h2>
           <p className="text-secondary-light mb-4">
-            Desde nuestra fundación en 1990, hemos trabajado incansablemente
-            para proveer agua potable a nuestras comunidades. Con más de 30 años
-            de experiencia, hemos evolucionado y crecido, adaptándonos a los
-            cambios tecnológicos y ambientales para ofrecer un servicio de
-            excelencia. Nuestros inicios humildes se han transformado en una red
-            robusta que atiende a miles de clientes, garantizando siempre la
-            calidad y continuidad del servicio.
+            La Asociación de Usuarios de los Servicios Públicos del Corregimiento de Ceilán Municipio de 
+            Bugalagrande departamento del Valle del Cauca República de Colombia "Servipublicos", 
+            identificada con Nit: 821.000.380-2, fue constituida por documento privado del 18 de noviembre de 1996, 
+            registrada en la cámara de comercio de Tuluá bajo el número 42 del libro del libro I del registro de 
+            entidades sin ánimo de lucro el 23 de Diciembre de 1996.
           </p>
           <div className="text-center">
             <img
@@ -69,6 +65,30 @@ const AboutPage = () => {
             <p className="text-secondary-light italic">
               Imagen representativa de nuestra historia y crecimiento.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Objeto social y actividades */}
+      <section className="bg-neutral-lightest p-10">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <h2 className="text-3xl font-bold text-primary mb-4">
+                Objecto Social
+              </h2>
+              <p className="text-secondary-light">
+                Responder porque la planta de tratamiento que surte el acueducto permanezca en buen estado.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+              <h2 className="text-3xl font-bold text-primary mb-4">
+                Actividades
+              </h2>
+              <p className="text-secondary-light">
+                Servipublicos, tendrá como objetivo primordial administrar y garantizar la prestación oportuna y organizada del servicio de acueducto.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +153,7 @@ const AboutPage = () => {
       </section>
 
       {/* Testimonios */}
-      <section className="bg-white p-10">
+      {/* <section className="bg-white p-10">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">
             Lo que dicen nuestros clientes
@@ -156,7 +176,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Video Institucional */}
       <section className="bg-neutral-lightest p-10 text-center">
@@ -167,7 +187,7 @@ const AboutPage = () => {
           <div className="relative pb-9/16">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/LqoVJPFAbf4"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -178,7 +198,7 @@ const AboutPage = () => {
       </section>
 
       {/* Llamada a la Acción */}
-      <section className="bg-tertiary text-white p-10 text-center">
+      {/* <section className="bg-tertiary text-white p-10 text-center">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             ¿Listo para trabajar con nosotros?
@@ -190,7 +210,7 @@ const AboutPage = () => {
             Contáctanos
           </a>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

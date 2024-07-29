@@ -10,3 +10,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-style: normal;
+}
+
+.bagel-fat-one-regular, h1 {
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+/* .bagel-fat-one-regular, p {
+  font-weight: 400;
+  font-size: 90px;
+} */
